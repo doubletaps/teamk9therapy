@@ -61,6 +61,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     orm_adapter (0.0.5)
+    pg (0.12.2)
     polyglot (0.3.3)
     rack (1.2.4)
     rack-cache (1.1)
@@ -166,6 +167,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  pg
   refinerycms (~> 1.0.8)
   refinerycms-blog (~> 1.6)
   refinerycms-inquiries (~> 1.0)
