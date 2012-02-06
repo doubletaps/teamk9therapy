@@ -1,0 +1,10 @@
+#portfolio_images .odd {
+	display: inline;
+	float: left;
+	
+}
+
+#portfolio_images .even {
+	display: inline;
+	float: right;
+}
