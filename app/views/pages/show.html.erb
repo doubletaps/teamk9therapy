@@ -4,6 +4,20 @@
 <section id='side_body_content'>
   <%=raw @page.content_for(:side_body) %>
 </section>
+
+<section id='body_content_right'>
+<% content_for :body_content_right do %>
+  <ul id='gallery'>
+    <% @page.images.each do |i| %>
+      <li>
+        <%= link_to image_tag(i.thumbnail("200x200#c").url), i.thumbnail("900x600").url %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+<%= render :partial => "/shared/content_page" %>
+</section>
+
 <section id='footer'>
   <%=raw @page.content_for(:footer) %>
 </section>
