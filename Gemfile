@@ -1,18 +1,25 @@
 source 'http://rubygems.org'
 
-# gem 'rails', '3.0.10'
+gem 'rails', '3.0.11'
+gem 'sqlite3', '1.3.3'
+
+group :development do
+  gem 'rspec-rails', '2.6.1'
+end  
+
+group :test do
+  gem 'rspec-rails', '2.6.1'
+  gem 'webrat', '0.7.1'
+end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# gem 'sqlite3'
-gem 'pg'
-# gem 'refinerycms-blog', '~> 1.6.1'
+
+# gem 'pg'
+
 gem 'haml'
 gem 'sass'
-# gem 'refinerycms-inquiries', '~> 1.0.0'
-# gem "refinerycms-news", '~> 1.2'
-# gem 'refinerycms-page-images', '~> 1.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'
