@@ -23,7 +23,7 @@ end
 
 
 
-
+gem 'fog', '0.8.2' 
 gem 'haml'
 gem 'sass'
 
